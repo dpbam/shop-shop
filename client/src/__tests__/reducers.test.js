@@ -52,7 +52,7 @@ test('UPDATE_CATEGORIES', () => {
   expect(initialState.categories.length).toBe(1);
 });
 
-test('UPDATE_CURRENT-CATEGORY', () => {
+test('UPDATE_CURRENT_CATEGORY', () => {
   let newState = reducer(initialState, {
     type: UPDATE_CURRENT_CATEGORY,
     currentCategory: '2',

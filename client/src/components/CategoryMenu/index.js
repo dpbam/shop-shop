@@ -6,6 +6,7 @@ import {
   UPDATE_CURRENT_CATEGORY,
 } from '../../utils/actions';
 import { useStoreContext } from '../../utils/GlobalState';
+import { idbPromise } from '../../utils/helpers';
 
 function CategoryMenu() {
   // const { data: categoryData } = useQuery(QUERY_CATEGORIES);
@@ -15,7 +16,7 @@ function CategoryMenu() {
 
   const { categories } = state;
 
-  const { data: categoryData } = useQuery(QUERY_CATEGORIES);
+  const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
   useEffect(() => {
     // if categoryData exists or has changed from the response of useQuery, then run dispatch()
@@ -24,6 +25,9 @@ function CategoryMenu() {
       dispatch({
         type: UPDATE_CATEGORIES,
         categories: categoryData.categories,
+      });
+      categoryData.categories.forEach((category) => {
+        idbPromise('categories', 'put', category);
       });
     }
   }, [categoryData, dispatch]);
