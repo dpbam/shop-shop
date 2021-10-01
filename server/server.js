@@ -25,7 +25,7 @@ app.use(express.json());
 app.use('/images', express.static(path.join(__dirname, '../client/images')));
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/shop-shop', {
-  // useFindAndModify: false,
+  useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
