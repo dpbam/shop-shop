@@ -45,7 +45,7 @@ function Nav() {
       </h1>
 
       <nav>{showNavigation()}</nav>
-      <Cart />
+      {/* <Cart /> */}
     </header>
   );
 }
