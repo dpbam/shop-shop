@@ -11,4 +11,5 @@ const Home = () => {
   );
 };
 
+// some type of comment
 export default Home;
