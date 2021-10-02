@@ -4,7 +4,6 @@ import { QUERY_CATEGORIES } from '../../utils/queries';
 import {
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORY,
-  UPDATE_PRODUCTS,
 } from '../../utils/actions';
 import { useStoreContext } from '../../utils/GlobalState';
 import { idbPromise } from '../../utils/helpers';
