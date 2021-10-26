@@ -13,8 +13,10 @@ Shop-Shop is a fully functional e-commerce website built with React and Context 
 
 ## Usage
 
-- ![Screen Shot 2021-09-30 at 4 39 36 PM](https://user-images.githubusercontent.com/82355287/135539296-f2c6d7c9-e641-406d-bcd3-3b7c21c09bb6.png)
-- https://github.com/dpbam/shop-shop -https://fast-peak-42136.herokuapp.com/
+![Screen Shot 2021-09-30 at 4 39 36 PM](https://user-images.githubusercontent.com/82355287/135539296-f2c6d7c9-e641-406d-bcd3-3b7c21c09bb6.png)
+
+- https://github.com/dpbam/shop-shop
+- https://fast-peak-42136.herokuapp.com/
 
 ## Contributing
 
