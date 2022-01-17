@@ -1,4 +1,4 @@
-# shop-shop
+# Shopper
 
 ## Description
 
